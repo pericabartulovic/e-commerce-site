@@ -8,6 +8,18 @@ import ProductsPage from "./pages/ProductsPage.vue";
 import ProductDetailPage from "./pages/ProductDetailPage.vue";
 import NotFoundPage from "./pages/NotFoundPage.vue"
 
+import { initializeApp } from "firebase/app";
+const firebaseConfig = {
+  apiKey: "AIzaSyDuEk7Gvyk-kNFPudKbohIYMxCBsPK3bqw",
+  authDomain: "e-commerce-demo-vue.firebaseapp.com",
+  projectId: "e-commerce-demo-vue",
+  storageBucket: "e-commerce-demo-vue.firebasestorage.app",
+  messagingSenderId: "458074488643",
+  appId: "1:458074488643:web:ec400ccca1d1ffda25f9f6"
+};
+
+initializeApp(firebaseConfig);
+
 createApp(App)
   .use(
     VueRouter.createRouter({
@@ -17,6 +29,7 @@ createApp(App)
         {
           path: "/products",
           component: ProductsPage,
+          props: true
         },
         {
           path: "/cart",

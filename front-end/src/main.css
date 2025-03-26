@@ -129,6 +129,8 @@ h1 {
 }
 
 .nav-buttons-wrap {
+  display: flex;
+  column-gap: 1rem;
   position: absolute;
   right: 16px;
   top: 16px;

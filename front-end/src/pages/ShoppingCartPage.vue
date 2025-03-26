@@ -13,6 +13,7 @@ import axios from 'axios';
 
 export default {
   name: "ShoppingCartPage",
+  props: ['user'],
   components: { ShoppingCartList },
   data() {
     return {
@@ -20,16 +21,24 @@ export default {
     }
   },
   
-  async created() {
-    const response = await axios.get('/api/users/12345/cart');
-    const cartItems = response.data;
-    this.cartItems = cartItems;
+  watch: {
+    async user(oldValue, newUserValue) {
+      if (newUserValue) {
+        const response = await axios.get(`/api/users/${newUserValue.uid}/cart`);
+        const cartItems = response.data;
+        this.cartItems = cartItems;
+      }
+    }
+  },
+  
+  created() {
+    this.fetchCartItemsOnCreated();
   },
   
   methods: {
     async removeFromCart(id) {
       try {
-        const response = await axios.delete(`/api/users/12345/cart/${id}`);
+        const response = await axios.delete(`/api/users/${this.user.uid}/cart/${id}`);
   
         if (response.status === 200) {
           this.cartItems = response.data;
@@ -39,6 +48,14 @@ export default {
         alert("Failed to remove product. Please try again.");
       }
     },
+    
+    async fetchCartItemsOnCreated() {
+      if (this.user) {
+        const response = await axios.get(`/api/users/${this.user.uid}/cart`);
+        const cartItems = response.data;
+        this.cartItems = cartItems;
+      }
+    }
   }
 }
 </script>
