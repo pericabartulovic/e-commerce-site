@@ -2,7 +2,7 @@
   <div class="nav-bar">
     <router-link to="/products" class="products-link">
       <div class="logo-wrap">
-        <img :src="logo" @click="displayImage()">
+        <img :src="logo">
       </div>
     </router-link>
     <router-link to="/cart" class="cart-link">
@@ -21,11 +21,5 @@ export default {
       logo,
     }
   },
-  methods: {
-    displayImage() {
-      console.log(this.logo);
-
-    }
-  }
 }
 </script>
