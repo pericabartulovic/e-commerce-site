@@ -18,3 +18,48 @@ import { defineProps, computed } from 'vue';
 defineProps(['products']);
 const productItemLink = computed(() => (id) => `/products/${id}`);
 </script>
+
+<style>
+.product-item {
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px #888;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  padding: 20px;
+  position: relative;
+  width: 32%;
+}
+
+.product-name {
+  margin-bottom: 0;
+}
+
+.product-item img {
+  height: 200px;
+  width: 200px;
+}
+
+.product-item a {
+  width: 100%;
+}
+
+.product-item button {
+  width: 100%;
+}
+
+.product-container {
+  align-content: 'center';
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  padding: 16px;
+  width: 100%;
+}
+
+.product-image {
+  flex: 1;
+  height: 100px;
+  max-width: 100px;
+}
+</style>

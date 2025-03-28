@@ -27,7 +27,7 @@ export default {
     }
   },
   methods: {
-    async signOut(){
+    async signOut() {
       const auth = getAuth();
       await signOut(auth);
       this.$router.push('/products');
@@ -35,3 +35,31 @@ export default {
   }
 }
 </script>
+
+<style>
+.nav-bar {
+  border-bottom: 1px solid #ddd;
+  height: 75px;
+  width: 100%;
+  background: linear-gradient(45deg, #4f5f05, #e1eab9);
+}
+
+.logo-wrap {
+  width: 120px;
+  height: 120px;
+}
+
+.nav-buttons-wrap {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.nav-buttons-wrap {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+</style>

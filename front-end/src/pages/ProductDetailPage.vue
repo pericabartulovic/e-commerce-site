@@ -111,8 +111,6 @@ export default {
         if (email) {
           try {
             await signInWithEmailLink(auth, email, window.location.href);
-            console.log("Successfully signed in!");
-
             this.isOpen = true;
             this.isSignedFromEmailLink = true;
 
