@@ -10,12 +10,12 @@ import NotFoundPage from "./pages/NotFoundPage.vue"
 
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: "AIzaSyDuEk7Gvyk-kNFPudKbohIYMxCBsPK3bqw",
-  authDomain: "e-commerce-demo-vue.firebaseapp.com",
-  projectId: "e-commerce-demo-vue",
-  storageBucket: "e-commerce-demo-vue.firebasestorage.app",
-  messagingSenderId: "458074488643",
-  appId: "1:458074488643:web:ec400ccca1d1ffda25f9f6"
+  apiKey: "AIzaSyDHwS8BZMUmKvAe8BqrhYs7JP7G0KI5FYM",
+  authDomain: "e-commerce-demo-vue-e29e2.firebaseapp.com",
+  projectId: "e-commerce-demo-vue-e29e2",
+  storageBucket: "e-commerce-demo-vue-e29e2.firebasestorage.app",
+  messagingSenderId: "835473175978",
+  appId: "1:835473175978:web:d88a8fc10b80e0db3327d3"
 };
 
 initializeApp(firebaseConfig);

@@ -27,9 +27,10 @@ export default {
     }
   },
   methods: {
-    signOut(){
+    async signOut(){
       const auth = getAuth();
-      signOut(auth);
+      await signOut(auth);
+      this.$router.push('/products');
     }
   }
 }

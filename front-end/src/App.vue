@@ -6,18 +6,19 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
+import NavBar from "@/components/layout/NavBar.vue";
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 export default {
   name: 'App',
+  components: {
+    NavBar
+  },
+  
   data() {
     return {
       user: null,
     }
-  },
-  components: {
-    NavBar
   },
 
   created() {
