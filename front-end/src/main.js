@@ -9,8 +9,9 @@ import ProductDetailPage from "./pages/ProductDetailPage.vue";
 import NotFoundPage from "./pages/NotFoundPage.vue"
 
 import { initializeApp } from "firebase/app";
+const apiKey = process.env.VUE_APP_GOOGLE_API_KEY;
 const firebaseConfig = {
-  apiKey: "AIzaSyDHwS8BZMUmKvAe8BqrhYs7JP7G0KI5FYM",
+  apiKey,
   authDomain: "e-commerce-demo-vue-e29e2.firebaseapp.com",
   projectId: "e-commerce-demo-vue-e29e2",
   storageBucket: "e-commerce-demo-vue-e29e2.firebasestorage.app",
