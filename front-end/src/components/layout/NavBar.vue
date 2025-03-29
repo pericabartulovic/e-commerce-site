@@ -49,6 +49,13 @@ export default {
   height: 120px;
 }
 
+@media (max-width: 1024px) {
+  .logo-wrap {
+      width: 50px;
+      height: 50px;
+    }
+}
+
 .nav-buttons-wrap {
   display: flex;
   column-gap: 1rem;

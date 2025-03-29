@@ -32,6 +32,12 @@ const productItemLink = computed(() => (id) => `/products/${id}`);
   width: 32%;
 }
 
+@media (max-width: 800px) {
+  .product-item {
+    width: 100%;
+  }
+}
+
 .product-name {
   margin-bottom: 0;
 }

@@ -121,6 +121,9 @@ menu {
   dialog {
     left: calc(50% - 20rem);
     width: 40rem;
+    font-size: 80%;
+    
+    
   }
 }
 </style>

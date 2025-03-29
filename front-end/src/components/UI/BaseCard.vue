@@ -12,4 +12,15 @@
   /* margin: 2rem auto; */
   max-width: 40rem;
 }
+
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    padding: 0;
+  }
+}
 </style>

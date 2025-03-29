@@ -99,7 +99,7 @@ h1 {
   margin-top: 16px;
   background-color: #888;
   width: 100%;
-  cursor:default;
+  cursor: default;
 }
 
 .products-link {
@@ -125,7 +125,7 @@ h1 {
 
 .grid-wrap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 16px;
@@ -139,4 +139,20 @@ h1 {
 .remove-button {
   flex: 1;
   margin: auto;
+}
+
+@media (max-width: 800px) {
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .grid-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-wrap img {
+    width: 330px;
+  }
 }
