@@ -10,6 +10,8 @@ import NotFoundPage from "./pages/NotFoundPage.vue"
 
 import { initializeApp } from "firebase/app";
 const apiKey = process.env.VUE_APP_GOOGLE_API_KEY;
+console.log(apiKey);
+
 const firebaseConfig = {
   apiKey,
   authDomain: "e-commerce-demo-vue-e29e2.firebaseapp.com",
