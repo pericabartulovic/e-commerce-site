@@ -16,11 +16,10 @@
 
 @media (max-width: 800px) {
   h2 {
-    font-size: 1.2rem;
-  }
-
-  .card {
-    padding: 0;
-  }
-}
-</style>
+      font-size: 1.2rem;
+    }
+  
+    .card {
+      padding: 0;
+    }
+}</style>
