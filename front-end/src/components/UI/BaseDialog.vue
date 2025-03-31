@@ -75,12 +75,12 @@ dialog {
 
 header {
   background-color: #5e7304;
-  color: white;
   width: 100%;
   padding: 1rem;
 }
 
 header h2 {
+  color: beige;
   margin: 0;
 }
 
@@ -115,15 +115,21 @@ menu {
   transform: scale(1);
 }
 
-
-
 @media (min-width: 768px) {
   dialog {
     left: calc(50% - 20rem);
     width: 40rem;
-    font-size: 80%;
-    
-    
   }
+}
+
+@media (max-width: 768px) {
+  dialog {
+    font-size: 80%;
+  }
+  
+  dialog header h2 {
+      font-size: 1.2rem;
+      color: beige;
+    }
 }
 </style>

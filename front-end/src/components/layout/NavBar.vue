@@ -49,13 +49,6 @@ export default {
   height: 120px;
 }
 
-@media (max-width: 1024px) {
-  .logo-wrap {
-      width: 50px;
-      height: 50px;
-    }
-}
-
 .nav-buttons-wrap {
   display: flex;
   column-gap: 1rem;
@@ -68,5 +61,54 @@ export default {
   position: absolute;
   right: 16px;
   top: 16px;
+}
+
+.products-link {
+  text-align: center;
+  display: block;
+  color: black;
+  font-size: 22px;
+  left: 32px;
+  position: absolute;
+  top: 16px;
+  text-decoration: none;
+}
+
+.products-link h1 {
+  margin: 0;
+}
+
+.cart-link {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+@media (max-width: 1024px) {
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .logo-wrap {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-buttons-wrap {
+    position: relative;
+    right: unset;
+    top: unset;
+  }
+
+  .products-link,
+  .cart-link {
+    position: relative;
+    right: unset;
+    top: unset;
+    left: unset;
+  }
 }
 </style>
