@@ -92,8 +92,8 @@ export default {
       this.isLoading = true;
       const auth = getAuth();
       const actionCodeSettings = {
-        url: `http://localhost:8080/products/${this.$route.params.productId}`, //local 
-        // url: `https://e-commerce-site-5khi.onrender.com/products/${this.$route.params.productId}`, //prod
+        // url: `http://localhost:8080/products/${this.$route.params.productId}`, //local 
+        url: `https://e-commerce-site-5khi.onrender.com/products/${this.$route.params.productId}`, //prod
         handleCodeInApp: true,
       };
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
